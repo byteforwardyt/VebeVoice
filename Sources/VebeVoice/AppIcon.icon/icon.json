@@ -1,0 +1,84 @@
+{
+  "groups": [
+    {
+      "layers": [
+        {
+          "glass": true,
+          "image-name": "02-text-cursor.svg",
+          "name": "Text cursor",
+          "position": {
+            "scale": 0.88,
+            "translation-in-points": [
+              0,
+              0
+            ]
+          }
+        }
+      ],
+      "name": "Cursor",
+      "shadow": {
+        "kind": "layer-color",
+        "opacity": 0.5
+      },
+      "translucency": {
+        "enabled": true,
+        "value": 0.2
+      }
+    },
+    {
+      "layers": [
+        {
+          "glass": true,
+          "image-name": "01-voice-bars.svg",
+          "name": "Voice bars",
+          "position": {
+            "scale": 0.88,
+            "translation-in-points": [
+              0,
+              0
+            ]
+          },
+          "fill-specializations": [
+            {
+              "appearance": "dark",
+              "value": {
+                "solid": "display-p3:0.89020,0.84706,1.00000,1.00000"
+              }
+            }
+          ]
+        }
+      ],
+      "name": "Voice",
+      "shadow": {
+        "kind": "neutral",
+        "opacity": 0.5
+      },
+      "translucency": {
+        "enabled": true,
+        "value": 0.3
+      }
+    }
+  ],
+  "supported-platforms": {
+    "squares": "shared"
+  },
+  "fill-specializations": [
+    {
+      "value": {
+        "linear-gradient": [
+          "display-p3:0.66667,0.47059,1.00000,1.00000",
+          "display-p3:0.21961,0.05490,0.56471,1.00000"
+        ]
+      }
+    },
+    {
+      "appearance": "dark",
+      "value": {
+        "linear-gradient": [
+          "display-p3:0.20784,0.10196,0.38824,1.00000",
+          "display-p3:0.04706,0.02353,0.09412,1.00000"
+        ]
+      }
+    }
+  ]
+}

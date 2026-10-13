@@ -1,0 +1,19 @@
+VebeVoice
+Copyright (c) 2026 Altstead LLC and VebeVoice contributors
+
+This product is licensed under the GNU General Public License v3.0
+(see LICENSE).
+
+VebeVoice is based on FluidVoice by altic-dev
+(https://github.com/altic-dev/FluidVoice), licensed under GPLv3.
+Copyright in the original work remains with its authors. VebeVoice is a
+modified version of that work: it has been renamed, restructured, and
+substantially changed (analytics, auto-updater, cloud AI providers, and
+backup features removed; UI, icon, and audio pipeline reworked).
+Modifications are distributed under the same license.
+
+Third-party libraries are resolved via Swift Package Manager as declared
+in Package.swift / Package.resolved (including FluidAudio and
+transcribe-cpp-swift by altic-dev). Their licenses apply as published by
+their respective maintainers. Speech models are downloaded at runtime
+from their publishers and are subject to their own licenses.
