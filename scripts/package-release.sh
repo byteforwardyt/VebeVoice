@@ -16,7 +16,8 @@
 #                   Application" identity in the keychain, else ad-hoc ("-").
 #   NOTARY_PROFILE  notarytool keychain profile. When set, the app is
 #                   notarized and stapled (requires a Developer ID SIGN_ID).
-#   ZIP=1           also write VebeVoice-<version>.zip next to the app.
+#   ZIP=1           also write VebeVoice-<version>.zip and VebeVoice.zip next
+#                   to the app. Upload both to the GitHub release.
 
 set -euo pipefail
 
@@ -122,7 +123,9 @@ if [ "${ZIP:-0}" = "1" ]; then
     ZIP_PATH="${OUTPUT_DIR}/VebeVoice-${VERSION}.zip"
     rm -f "${ZIP_PATH}"
     ditto -c -k --keepParent "${OUTPUT_DIR}/VebeVoice.app" "${ZIP_PATH}"
-    echo "Zip: ${ZIP_PATH}"
+    # The README download badge points at releases/latest/download/VebeVoice.zip.
+    cp "${ZIP_PATH}" "${OUTPUT_DIR}/VebeVoice.zip"
+    echo "Zip: ${ZIP_PATH} (+ VebeVoice.zip)"
 fi
 
 echo

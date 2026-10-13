@@ -2,6 +2,12 @@
 
 **Free, local-first voice dictation for macOS.** Press a hotkey, talk, and VebeVoice types what you said into whatever app you're using. Speech recognition runs on your Mac; no account, no subscription, no telemetry.
 
+<p>
+  <a href="https://github.com/byteforwardyt/VebeVoice/releases/latest/download/VebeVoice.zip"><img src="docs/images/download-macos.svg" alt="Download VebeVoice for macOS" height="56"></a>
+</p>
+
+Free · macOS 15+ · Signed and notarized · [All releases](https://github.com/byteforwardyt/VebeVoice/releases)
+
 > Based on [FluidVoice](https://github.com/altic-dev/FluidVoice) by altic-dev (GPLv3).
 
 ---
@@ -25,7 +31,7 @@
 
 ## Install
 
-1. Download the latest `VebeVoice-<version>.zip` from [Releases](https://github.com/byteforwardyt/VebeVoice/releases).
+1. [Download VebeVoice.zip](https://github.com/byteforwardyt/VebeVoice/releases/latest/download/VebeVoice.zip) (latest release).
 2. Unzip and drag **VebeVoice.app** into `/Applications`.
 3. Open it and follow onboarding: grant **Microphone** and **Accessibility** access, then pick a speech model to download.
 
